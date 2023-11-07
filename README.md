@@ -1,6 +1,7 @@
 # Java-11-Spring-Boot---Login
 
 **Autor: Hugo Adrian Meza Vega**
+
 Microservicio de autenticación con base de datos PostgreSQL. Seguridad a través de JWT.
 Se utiliza una aplicación base obtenida a través Spring Initializr agregando las siguientes dependencias:
 * ✅ **Spring Web**: Esta dependencia proporciona características para el desarrollo de aplicaciones web, incluido el manejo de solicitudes HTTP.
