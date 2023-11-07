@@ -54,10 +54,6 @@ public class NombresUsuarios {
     }
 
     //Zona de setters
-    public void setNombreUsuarioId(Long nombreUsuarioId) {
-        this.nombreUsuarioId = nombreUsuarioId;
-    }
-
     public void setNombresUusario(String nombresUusario) {
         this.nombresUsario = nombresUusario;
     }

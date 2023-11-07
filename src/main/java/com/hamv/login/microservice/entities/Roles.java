@@ -32,9 +32,6 @@ public class Roles {
     }
 
     //Zona de setters
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
-    }
     public void setNombreRole(EnumRole nombreRole) {
         this.nombreRole = nombreRole;
     }
