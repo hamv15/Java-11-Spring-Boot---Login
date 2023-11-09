@@ -8,7 +8,7 @@ public class Roles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Comment("Columna para almacenar el id del role")
-    private Integer roleId;
+    private Long roleId;
 
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
@@ -24,7 +24,7 @@ public class Roles {
     }
 
     //Zona de getters 
-    public Integer getRoleId() {
+    public Long getRoleId() {
         return roleId;
     }
     public EnumRole getNombreRole() {
