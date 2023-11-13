@@ -2,13 +2,14 @@ package com.hamv.login.microservice.repository;
 
 import java.util.Optional;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.hamv.login.microservice.entities.Usuarios;
 
 @Repository
-public interface UsuariosRepository {
+public interface UsuariosRepository extends JpaRepository<Usuarios, Long>{
     Optional<Usuarios> findByUsername(String username);
 
     Boolean existsByUsername(String username);

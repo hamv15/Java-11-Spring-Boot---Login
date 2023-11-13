@@ -4,6 +4,8 @@ import org.hibernate.annotations.Comment;
 
 import jakarta.persistence.*;
 
+@Entity
+@Table(name = "roles")
 public class Roles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +21,8 @@ public class Roles {
     public Roles(){
         //Constructor requerido por JPA
     }
-    public Roles(EnumRole nombreRole){
+    public Roles(Long roleId,EnumRole nombreRole){
+        this.roleId=roleId;
         this.nombreRole=nombreRole;
     }
 

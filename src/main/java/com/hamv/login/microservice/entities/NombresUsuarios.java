@@ -15,7 +15,7 @@ public class NombresUsuarios {
 
     @NotBlank(message = "El nombre o nombres del usuario no puede ser nulo")
     @Comment("Columna para almacenar el nombre o nombres del usuario")
-    private String nombresUsario;
+    private String nombresUsuario;
 
     @NotBlank(message = "El primer apellido del usuario no puede ser nulo")
     @Comment("Columna para almacenar el primer apellido del usuario")
@@ -31,7 +31,7 @@ public class NombresUsuarios {
     }
 
     public NombresUsuarios(String nombresUsario, String primerApellidoUsuario, String segundoApellidoUsuario){
-        this.nombresUsario=nombresUsario;
+        this.nombresUsuario=nombresUsario;
         this.primerApellidoUsuario=primerApellidoUsuario;
         this.segundoApellidoUsuario=segundoApellidoUsuario;
     }
@@ -41,28 +41,28 @@ public class NombresUsuarios {
         return nombreUsuarioId;
     }
 
-    public String getNombresUusario() {
-        return nombresUsario;
+    public String getNombresUsuario() {
+        return nombresUsuario;
     }
 
-    public String getPrimerApellidoUsario() {
+    public String getPrimerApellidoUsuario() {
         return primerApellidoUsuario;
     }
 
-    public String getSegundoApellidoUsario() {
+    public String getSegundoApellidoUsuario() {
         return segundoApellidoUsuario;
     }
 
     //Zona de setters
-    public void setNombresUusario(String nombresUusario) {
-        this.nombresUsario = nombresUusario;
+    public void setNombresUsuario(String nombresUusario) {
+        this.nombresUsuario = nombresUusario;
     }
 
-    public void setPrimerApellidoUsario(String primerApellidoUsario) {
+    public void setPrimerApellidoUsuario(String primerApellidoUsario) {
         this.primerApellidoUsuario = primerApellidoUsario;
     }
 
-    public void setSegundoApellidoUsario(String segundoApellidoUsario) {
+    public void setSegundoApellidoUsuario(String segundoApellidoUsario) {
         this.segundoApellidoUsuario = segundoApellidoUsario;
     }
 
