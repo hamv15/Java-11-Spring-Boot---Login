@@ -12,8 +12,11 @@ import com.hamv.login.microservice.repository.UsuariosRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
+  private UsuariosRepository userRepository;
   @Autowired
-  UsuariosRepository userRepository;
+  public void userRepository(UsuariosRepository userRepository){
+    this.userRepository=userRepository;
+  }
 
   @Override
   @Transactional
