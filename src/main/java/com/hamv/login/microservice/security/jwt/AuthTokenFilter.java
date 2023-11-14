@@ -20,7 +20,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import com.hamv.login.microservice.security.services.UserDetailsServiceImpl;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
-
+  
   private JwtUtils jwtUtils;
   @Autowired
   public void jwtUtils(JwtUtils jwtUtils){
